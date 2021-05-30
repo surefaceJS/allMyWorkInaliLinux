@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 34. Javascript. To do List && Trello</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-3">
+                <button type="button" class="btn btn-success btn-block" onclick="showCard()">Add board</button>
+
+                <div class="card mt-3 d-none" id="card">
+                    <div class="card-body">
+                        <textarea id="board-title" class="form-control shot" placeholder="Type here"></textarea>
+
+                        <button type="button" class="btn btn-success mt-3 d-block ml-auto" onclick="addBoard()">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row" id="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

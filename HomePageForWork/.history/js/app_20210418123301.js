@@ -1,0 +1,1 @@
+const charector = document.getElementById("charactor")

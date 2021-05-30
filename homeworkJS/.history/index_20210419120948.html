@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadyWebPage</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-3 border shadow mt-4">
+
+                <!--  <img src="assets/images/Screenshot from 2021-04-14 08-49-57.png" alt="sorry..!" style="width: 60px; height: 60px; border-radius: 50%;"> -->
+
+                <input type="file" id="photo">
+
+                <input type="text" placeholder="YourName" id="userName" class="form-control mt-5 d-block">
+
+                <input type="text" placeholder="YourSureName" id="userSureName" class="form-control mt-3 d-block">
+
+                <input type="date" id="userBirthDay" class="form-control d-block mt-3">
+
+                <select class=" mt-3 d-block form-control" id="typeStudy">
+                    <option value="grand ">Grand</option>
+                    <option value="contract ">Contract</option>
+                </select>
+
+                <button type="button" class="btn btn-success mt-3 d-block ml-auto mb-3" onclick="AddNew ()">Add</button>
+
+            </div>
+            <div class="col-9">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>photo</th>
+                            <th>ism / Familya</th>
+                            <th>Tug'ilgan Yili</th>
+                            <th>Oqish Turi</th>
+                            <th>Amal</th>
+                        </trdasd>
+                    </thead>
+                    <tbody id="result"></tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <script src="js/jquery-3.3.1.slim.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/app.js "></script>
+</body>
+
+</html>

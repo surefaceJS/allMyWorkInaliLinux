@@ -1,0 +1,123 @@
+#header{
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+
+    .bar{
+      height: 2px;
+      width: 30px;
+      position: relative;
+      background-color: #fff;
+      z-index: -1;
+
+      &:after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        transition: .3s ease;
+        transition-property: top, bottom;
+        top: 8px;
+      }
+
+
+      &:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        transition: .3s ease;
+        transition-property: top, bottom;
+        bottom: 8px;
+      }
+
+    }
+  }
+
+  .nav-list ul{
+    list-style: none;
+    position: absolute;
+    background-color: #000111;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow-x: hidden;
+
+    a{
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 2rem;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 20px;
+      display: block;
+    }
+
+    a::after{
+      content: attr(data-after);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      color: rgba(240, 248, 255,0.021);
+      font-size: 10rem;
+      letter-spacing: 50px;
+      z-index: -1;
+      transition: .3s ease letter-spacing;
+    }
+    li{
+      &:hover{
+        a::after{
+          transform: translate(-50%, -50%) scale(1);
+          letter-spacing: initial;
+        }
+      }
+    }
+  }
+
+  .header {
+
+    min-height: 8vh;
+    background: #000;
+
+
+
+    .nav-bar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      max-width: 1300px;
+      padding: 0 10px;
+    }
+  }
+}
+
+

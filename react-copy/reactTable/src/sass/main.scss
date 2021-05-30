@@ -1,0 +1,231 @@
+          .left {
+
+            margin-top: 30px;
+              .logo {
+                  width: 190px;
+              }
+
+              .burger{
+                      width: 25px;
+                      height: 18px;
+              }
+              .navbar-nav {
+                  // my style   start
+
+                  .buttonNav {
+                      position: relative;
+                      display: inline-block;
+                      padding: 7px;
+                      color: #000000;
+                      text-decoration: none;
+                      font-weight: 600;
+                      font-size: 13px;
+                      transition: 0.3s;
+                      margin-right: 10px;
+
+                      &:hover {
+                          border: 2px solid #0A7F2E;
+                          color: #0A7F2E;
+
+                          &::before {
+                              content: '';
+                              position: absolute;
+                              top: 6px;
+                              left: -2px;
+                              width: calc(100% + 4px);
+                              height: calc(100% - 12px);
+                              background: #fff;
+                              transform: 0.5s else-in-out;
+                          }
+
+                          &::after {
+                              content: '';
+                              position: absolute;
+                              left: 6px;
+                              top: -2px;
+                              height: calc(100% + 4px);
+                              width: calc(100% - 12px);
+                              background: #fff;
+                              transform: 0.5s else-in-out;
+                          }
+                      }
+
+
+                      span {
+                          position: relative;
+                          z-index: 3;
+                      }
+                  }
+
+                  .play {
+                      transition: 0.2s;
+
+                      &:hover {
+                          transform: scale(1.3);
+                      }
+                  }
+
+                  .sur {
+                      padding-left: 247px;
+                  }
+
+                  .tel {
+                      color: #000;
+                      font-size: 13px;
+
+                      @media (max-width:1200px) {
+                          font-size: 12px;
+                      }
+
+                      @media (max-width:996px) {
+                          font-size: 10px;
+                      }
+
+                      @media (max-width:767px) {
+                          color: black;
+                      }
+                  }
+
+                  .search {
+                      margin-right: 27px;
+                      margin-left: 32px;
+                      background-color: green;
+
+                      @media (max-width:996px) {
+                          margin-right: 22px;
+                          margin-left: 27px;
+                      }
+
+                      @media (max-width:767px) {
+                          background-color: green;
+                      }
+
+                      .icon-search {
+                          width: 13px;
+                          height: 13px;
+                      }
+                  }
+
+                  .question {
+                      color: green;
+                      font-size: 13px;
+                      border: 1px solid green;
+                      padding: 7px 15px;
+
+                      @media (max-width:1200px) {
+                          font-size: 12px;
+                      }
+
+                      @media (max-width:996px) {
+                          font-size: 10px;
+                      }
+
+                      @media (max-width:767px) {
+                          color: green;
+                          border-color: green;
+                      }
+
+                      &:hover {
+                          background-color: green;
+                          color: #fff;
+
+                          @media (max-width:767px) {
+                              color: #fff;
+                              background-color: green;
+                          }
+                      }
+                  }
+
+              }
+          }
+          body{
+              position: relative;
+          }
+
+
+          section{
+
+             .moveme{
+                 position: absolute;
+                 top: -80px;
+                 right: -105px;
+                 width: 123%;
+             }
+              h1{
+                  span{
+                      color: green;
+                  }
+                  font-family: sans-serif;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 37px;
+                  line-height: 48px;
+                  margin-top: 60px;
+                  margin-bottom: 35px;
+              }
+              p{
+                  font-family: sans-serif;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 15px;
+                  line-height: 33px;
+                  color: #666666;
+                  margin-bottom: 20px;
+              }
+              .rightPic{
+                  margin-top: 100px;
+              }
+              
+          }
+
+          // my style   finish
+
+
+          .ones{
+              margin-top: 100px;
+              position: relative;
+              .look{
+                  position: absolute;
+                  top: 0;
+                  border: 2px solid white;
+                  padding: 30px;
+                  margin: 50px;
+                  width: 92%;
+                  height: 77%;
+                  button{
+                      border-radius: 0 !important;
+                      background: #fff;
+                      &:hover{
+                          background: green;
+                          color: white;
+                      }
+                  }
+                  h2{
+                      font-family: "Cantarell Extra Bold";
+                      color: white;
+                      line-height: 45px;
+
+                  }
+              }
+          }
+
+
+          .biger{
+              padding-top: 100px;
+              padding-bottom: 100px;
+              background: linear-gradient(to right, #F5F5F5 50%, #fff 50%);
+              .line{
+                  width: 85%;
+                  height: 4px;
+                  background-color: #0A7F2E;
+              }
+              .yozuv{
+                  margin-top: 30px;
+                  margin-bottom: 30px;
+              }
+              .pluseSonlar{
+                  color: #0A7F2E;
+              }
+          }
+
+

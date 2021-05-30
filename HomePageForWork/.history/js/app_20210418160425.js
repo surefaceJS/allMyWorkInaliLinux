@@ -1,0 +1,27 @@
+const charactor = document.getElementById("charactor");
+const block = document.getElementById("block");
+
+function jump() {
+
+    if (charactor.classList != "animate") {
+        charactor.classList.add("animate");
+    }
+
+
+    setTimeout(function() {
+        charactor.classList.remove("animate");
+    }, 5000);
+
+}
+
+
+const checkDead = setTimeout(function() {
+    const characterTop = parseInt(window.getComputedStyle(charactor).getPropertyValue("top"));
+    const blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+
+    if (blockleft < 20 && blockleft > 0 && characterTop >= 130) {
+        block.style.animation = "none";
+        block.style.display = "none";
+        alert("You Lose..");
+    }
+}, 10)

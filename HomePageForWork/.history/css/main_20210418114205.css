@@ -1,0 +1,71 @@
+            /*********************  FONTS STYLE *************************/
+            
+            @font-face {
+                font-family: "Inter-Bold";
+                src: url("../asssets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+            }
+            
+            @font-face {
+                font-family: "Inter-Regular";
+                src: url("../asssets/fonts/Inter/Inter-Regular.ttf") format("truetype");
+            }
+            
+            @font-face {
+                font-family: "Inter-Light";
+                src: url("../asssets/fonts/Inter/Inter-Light.ttf") format("truetype");
+            }
+            
+            @font-face {
+                font-family: "Inter-SemiBold";
+                src: url("../asssets/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+            }
+            
+            .font-intel-bold {
+                font-family: "Inter-Bold", sans-serif;
+            }
+            
+            .font-intel-regular {
+                font-family: "Inter-Regular", sans-serif;
+            }
+            
+            .font-intel-light {
+                font-family: "Inter-Light", sans-serif;
+            }
+            
+            .font-inter-semi-bold {
+                font-family: "Inter-SemiBold", sans-serif;
+            }
+            
+            #game {
+                width: 100%;
+                height: 200px;
+                border: 1px solid black;
+                margin-top: 200px;
+            }
+            
+            #charactor {
+                width: 20px;
+                height: 50px;
+                background: red;
+                position: relative;
+                top: 1px;
+            }
+            
+            #block {
+                width: 20px;
+                height: 20px;
+                background: blue;
+                position: relative;
+                top: 130px;
+                left: 480px;
+                animation: block 1s infinite linear;
+            }
+            
+            @keyframes bllock {
+                0% {
+                    left: 440px;
+                }
+                100% {
+                    left: -40px;
+                }
+            }
